@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vértice, a primeira alfaiataria ai-first do Brasil</title>
+<meta name="description" content="Terno sob medida com medida por IA, provador inteligente e ajuste perfeito. Agende sua prova.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#131109;--sm:#1d1810;--ink:#f5eedd;--mut:#c2b493;--ch:#e3c37c;--ln:rgba(245,238,221,.15);--rd:20px}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;margin:0;overflow-x:hidden}
+::selection{background:var(--ch);color:#131109}
+img{display:block;max-width:100%}
+a{color:inherit}
+.d{font-family:"Instrument Serif",serif;font-weight:400;line-height:1.02}
+.pl{position:fixed;inset:0;z-index:200;background:#0d0b06;display:flex;align-items:flex-end;justify-content:space-between;padding:5vw;transition:opacity .7s ease,visibility .7s}
+.pl.g{opacity:0;visibility:hidden}
+.pl b{font-family:"Instrument Serif",serif;font-size:clamp(3rem,11vw,8rem);line-height:1}
+.pl b i{font-style:normal;color:var(--ch)}
+.pl span{font-size:.8rem;letter-spacing:.35em;text-transform:uppercase;color:var(--mut)}
+.hd{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4vw;border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.hd.f{background:rgba(19,17,9,.86);backdrop-filter:blur(14px);border-color:var(--ln)}
+.hd-l{font-family:"Instrument Serif",serif;font-size:1.5rem;text-decoration:none}
+.hd-l i{font-style:normal;color:var(--ch)}
+.hd-n{display:flex;gap:2rem}
+.hd-n a{text-decoration:none;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+.hd-n a:hover{color:var(--ch)}
+.hd-c{background:var(--ch);color:#131109;border:0;border-radius:999px;padding:.8rem 1.6rem;font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;font-family:inherit}
+.hd-m{display:none;background:none;border:0;color:var(--ink);font-size:1.6rem;cursor:pointer}
+.hro{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hro-i{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hro-v{position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,17,9,.62),rgba(19,17,9,.18) 40%,rgba(19,17,9,.94))}
+.hro-x{position:relative;padding:0 4vw 4vh}
+.hro-s{display:inline-block;font-size:.78rem;letter-spacing:.4em;text-transform:uppercase;color:var(--ch);border:1px solid rgba(227,195,124,.55);border-radius:999px;padding:.55rem 1.2rem;margin-bottom:1.4rem}
+.hro-t{font-size:clamp(2.8rem,10.5vw,9.5rem);margin:0}
+.hro-t em{color:var(--ch)}
+.hro-p{max-width:34rem;color:#ece4cf;font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.6}
+.hro-a{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem}
+.bt{display:inline-block;border-radius:999px;padding:1rem 2.1rem;font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;font-family:inherit}
+.bt1{background:var(--ch);color:#131109}
+.bt1:hover{transform:translateY(-2px)}
+.bt2{border-color:var(--ln);color:var(--ink)}
+.bt2:hover{border-color:var(--ch);color:var(--ch)}
+.hro-f{position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);margin-top:3rem}
+.hro-f div{padding:1.2rem 4vw 1.6rem;border-left:1px solid var(--ln)}
+.hro-f div:first-child{border-left:0;padding-left:0}
+.hro-f b{font-family:"Instrument Serif",serif;font-size:clamp(1.4rem,2.4vw,2rem);display:block;font-weight:400}
+.hro-f span{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--mut)}
+.mq{border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);overflow:hidden;background:var(--ch);color:#131109;padding:.9rem 0}
+.mq-t{display:flex;gap:3rem;width:max-content;animation:mq 22s linear infinite;font-family:"Instrument Serif",serif;font-size:1.15rem;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mn{padding:14vh 4vw;max-width:90rem}
+.mn p{font-family:"Instrument Serif",serif;font-size:clamp(1.7rem,4.2vw,3.2rem);line-height:1.3;margin:0}
+.mn em{color:var(--ch)}
+.sc{padding:8vh 4vw}
+.sc-h{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--ln);padding-bottom:1.2rem;margin-bottom:2.5rem}
+.sc-h h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.2rem,5.5vw,4rem);margin:0}
+.sc-h span{color:var(--mut);font-size:.8rem;letter-spacing:.3em;text-transform:uppercase}
+.sv-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.cd{background:var(--sm);border:1px solid var(--ln);border-radius:var(--rd);padding:2rem;transition:transform .35s,border-color .35s}
+.cd:hover{transform:translateY(-6px);border-color:rgba(227,195,124,.6)}
+.cd n{font-family:"Instrument Serif",serif;color:var(--ch);font-size:1rem;letter-spacing:.15em}
+.cd h3{font-size:1.35rem;margin:.9rem 0 .6rem}
+.cd p{color:var(--mut);line-height:1.65;margin:0 0 1.4rem}
+.cd f{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ln);padding-top:1.1rem}
+.cd f a{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ch);text-decoration:none;font-weight:700}
+.qz{background:linear-gradient(135deg,#1d1810,#2a2113);border:1px solid rgba(227,195,124,.45);border-radius:calc(var(--rd) + 6px);margin:0 4vw;padding:3.5rem 3rem}
+.qz h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(1.8rem,4.5vw,3rem);margin:0 0 .6rem}
+.qz h2 em{color:var(--ch)}
+.qz>p{color:var(--mut);margin:0 0 1.5rem}
+.qz-s{display:none}
+.qz-s.on{display:block;animation:fd .45s ease}
+@keyframes fd{from{opacity:0;transform:translateY(14px)}}
+.qz-s h3{font-size:1.25rem;margin:0 0 1.2rem}
+.qz-o{display:flex;gap:.8rem;flex-wrap:wrap}
+.qz-o button{background:#131109;border:1px solid var(--ln);color:var(--ink);border-radius:999px;padding:1rem 1.8rem;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit}
+.qz-o button:hover{border-color:var(--ch);color:var(--ch)}
+.qz-r{display:none;text-align:center;padding:1rem 0}
+.qz-r.on{display:block;animation:fd .45s ease}
+.qz-r b{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2rem,6vw,3.6rem);color:var(--ch);display:block}
+.qz-r p{color:var(--mut);max-width:30rem;margin:1rem auto 1.8rem;line-height:1.7}
+.qz-dots{display:flex;gap:.5rem;margin-bottom:1.5rem}
+.qz-dots i{width:34px;height:6px;border-radius:99px;background:rgba(245,238,221,.2)}
+.qz-dots i.f{background:var(--ch)}
+.of{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ln);border-radius:calc(var(--rd) + 6px);overflow:hidden;margin:0 4vw}
+.of img{width:100%;height:100%;min-height:420px;object-fit:cover}
+.of-t{padding:4rem 3.5rem;background:var(--sm)}
+.of-t h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.8rem);margin:0 0 1.2rem}
+.of-t p{color:var(--mut);line-height:1.75}
+.of-t ul{list-style:none;padding:0;margin:1.6rem 0 2rem}
+.of-t li{padding:.9rem 0;border-top:1px solid var(--ln);display:flex;gap:.9rem;align-items:center}
+.of-t li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ch);flex:none}
+.ag{background:var(--sm);border:1px solid var(--ln);border-radius:calc(var(--rd) + 6px);margin:0 4vw;padding:4rem 3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.ag h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.2rem,4.5vw,3.4rem);margin:0 0 1rem}
+.ag p{color:var(--mut);line-height:1.7}
+.fm label{display:block;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--mut);margin:1.1rem 0 .5rem}
+.fm input,.fm select{width:100%;box-sizing:border-box;background:#131109;border:1px solid var(--ln);border-radius:14px;color:var(--ink);padding:1rem;font-size:1rem;font-family:inherit}
+.fm input:focus,.fm select:focus{outline:none;border-color:var(--ch)}
+.fm button{margin-top:1.6rem;width:100%}
+.fq-i{border-bottom:1px solid var(--ln)}
+.fq-q{width:100%;background:none;border:0;color:var(--ink);display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-size:1.1rem;font-weight:600;cursor:pointer;text-align:left;font-family:inherit}
+.fq-q i{font-style:normal;color:var(--ch);font-size:1.5rem;transition:transform .3s}
+.fq-i.o .fq-q i{transform:rotate(45deg)}
+.fq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;color:var(--mut);line-height:1.7}
+.fq-a p{margin:0 0 1.5rem;max-width:44rem}
+.ft{padding:10vh 4vw 2rem;border-top:1px solid var(--ln);margin-top:8vh}
+.ft-g{font-family:"Instrument Serif",serif;font-size:clamp(2.8rem,11vw,10rem);margin:0}
+.ft-g em{color:var(--ch)}
+.ft-r{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin:3rem 0;padding:2rem 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.ft-r h4{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);margin:0 0 1rem}
+.ft-r p,.ft-r a{line-height:2;color:var(--ink);text-decoration:none}
+.ft-b{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--mut);font-size:.85rem}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
+.rv.on{opacity:1;transform:none}
+@media(max-width:960px){.hd-n{display:none}.hd-m{display:block}.hd-n.o{display:flex;position:fixed;inset:0;background:#131109;flex-direction:column;align-items:center;justify-content:center;gap:2rem}.sv-g{grid-template-columns:1fr}.of,.ag{grid-template-columns:1fr}.hro-f{grid-template-columns:repeat(2,1fr)}.hro-f div:nth-child(3){border-left:0;padding-left:0}.ft-r{grid-template-columns:1fr}.qz{padding:2.2rem 1.4rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="pl" id="pl"><span>Alfaiataria ai-first</span><b><i id="pln">0</i>%</b></div>
+<header class="hd" id="hd">
+<a class="hd-l" href="#topo">VÉRTICE<i>.</i></a>
+<nav class="hd-n" id="hdn">
+<a href="#servicos">Serviços</a>
+<a href="#provador">Provador IA</a>
+<a href="#atelier">Atelier</a>
+<a href="#agendar">Agendar</a>
+</nav>
+<a class="hd-c" href="#agendar">Agendar prova</a>
+<button class="hd-m" id="hdm" aria-label="Abrir menu">☰</button>
+</header>
+<section class="hro" id="topo">
+<img class="hro-i" src="assets/hero.jpg" alt="Alfaiate cortando tecido com fita métrica" fetchpriority="high">
+<div class="hro-v"></div>
+<div class="hro-x">
+<span class="hro-s">Primeira alfaiataria ai-first do Brasil</span>
+<h1 class="hro-t d">Terno que parece <em>nascido em você.</em></h1>
+<p class="hro-p">Medida por IA, corte de mestre e prova marcada no zap. Sob medida de verdade, sem as 5 idas ao atelier.</p>
+<div class="hro-a">
+<a class="bt bt1" href="#provador">Provador IA</a>
+<a class="bt bt2" href="#agendar">Agendar prova</a>
+</div>
+<div class="hro-f">
+<div><b>IA + mestre</b><span>medida e corte</span></div>
+<div><b>2 provas</b><span>no máximo</span></div>
+<div><b>Tecidos</b><span>italianos e ingleses</span></div>
+<div><b>Garantia</b><span>ajuste vitalício</span></div>
+</div>
+</div>
+</section>
+<div class="mq" aria-hidden="true"><div class="mq-t" id="mqt">
+<span>Sob medida •</span><span>Medida por IA •</span><span>Casamentos •</span><span>Ajustes •</span><span>Camisas •</span><span>Prova em casa •</span>
+</div></div>
+<section class="mn rv">
+<p>Terno bom não se compra pronto. <em>Se constrói em cima do seu corpo,</em> com medida da máquina e olho de quem corta há décadas.</p>
+</section>
+<section class="sc" id="servicos">
+<div class="sc-h rv"><h2 class="d">Serviços</h2><span>o atelier</span></div>
+<div class="sv-g">
+<article class="cd rv"><n>I</n><h3>Terno sob medida</h3><p>Do tecido ao botão final, construído nas suas medidas com 2 provas e entrega marcada.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>II</n><h3>Medida por IA</h3><p>Fotos guiadas geram sua pré-medida antes da primeira prova. Chega pronto, sai perfeito.</p><f><b>Grátis</b><a href="#provador">Testar →</a></f></article>
+<article class="cd rv"><n>III</n><h3>Casamentos</h3><p>Noivo, padrinhos e pai com o mesmo caimento e entrega sincronizada para o grande dia.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>IV</n><h3>Ajustes finos</h3><p>Barra, lateral, ombro e punho em peça pronta. O terno de loja vira sob medida.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>V</n><h3>Camisas</h3><p>Colarinho, punho e monograma do seu jeito, no algodão certo para o clima.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>VI</n><h3>Prova em casa</h3><p>Levamos tecidos e provador até você para medida e escolha sem sair.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+</div>
+</section>
+<section class="qz rv" id="provador">
+<h2 class="d">Provador <em>IA.</em></h2>
+<p>3 perguntas e a IA indica o caminho ideal, do tecido ao primeiro passo.</p>
+<div class="qz-dots"><i id="d1"></i><i id="d2"></i><i id="d3"></i></div>
+<div class="qz-s on" id="qs1">
+<h3>Para qual ocasião?</h3>
+<div class="qz-o">
+<button data-o="casamento">Meu casamento</button>
+<button data-o="trabalho">Trabalho diário</button>
+<button data-o="festa">Festa e evento</button>
+</div>
+</div>
+<div class="qz-s" id="qs2">
+<h3>Como você usa terno hoje?</h3>
+<div class="qz-o">
+<button data-u="nunca">Nunca usei</button>
+<button data-u="as vezes">De vez em quando</button>
+<button data-u="sempre">Todo dia</button>
+</div>
+</div>
+<div class="qz-s" id="qs3">
+<h3>Prioridade número um?</h3>
+<div class="qz-o">
+<button data-p="caimento">Caimento perfeito</button>
+<button data-p="prazo">Prazo curto</button>
+<button data-p="preço">Melhor custo</button>
+</div>
+</div>
+<div class="qz-r" id="qr">
+<b id="qres">Sob medida completo</b>
+<p id="qtxt"></p>
+<a class="bt bt1" id="qzap" href="#" target="_blank" rel="noopener">Pedir esse no zap →</a>
+</div>
+</section>
+<div class="of rv" id="atelier" style="margin-top:10vh">
+<img src="assets/corte.jpg" alt="Corte de tecido na mesa do alfaiate" loading="lazy">
+<div class="of-t">
+<h2 class="d">Máquina mede, mestre decide.</h2>
+<p>A IA extrai 40 medidas das suas fotos guiadas. O mestre valida cada uma na prova e o corte sai sem chute. A segunda prova é só celebração.</p>
+<ul>
+<li>Pré-medida por foto guiada</li>
+<li>Tecidos italianos e ingleses</li>
+<li>2 provas no máximo</li>
+<li>Ajuste vitalício garantido</li>
+</ul>
+<a class="bt bt1" href="#agendar">Marcar minha prova</a>
+</div>
+</div>
+<section class="sc" id="agendar">
+<div class="sc-h rv"><h2 class="d">Agendar prova</h2><span>resposta rapidinha</span></div>
+</section>
+<div class="ag rv">
+<div>
+<h2 class="d">Sua medida <em>começa aqui.</em></h2>
+<p>Preencha e caia no WhatsApp com a mensagem pronta. Sem cadastro, sem espera.</p>
+<p><b style="color:var(--ch)">Atendimento com hora marcada.</b><br>Traga a ocasião que a gente resolve o resto.</p>
+</div>
+<form class="fm" id="fm">
+<label for="fn">Seu nome</label>
+<input id="fn" type="text" placeholder="Como podemos chamar você" required autocomplete="name">
+<label for="fs">Assunto</label>
+<select id="fs"><option>Terno sob medida</option><option>Casamento</option><option>Ajuste fino</option><option>Camisas</option><option>Prova em casa</option></select>
+<label for="fd">Melhor dia</label>
+<input id="fd" type="date" required>
+<button class="bt bt1" type="submit">Enviar no WhatsApp →</button>
+</form>
+</div>
+<section class="sc">
+<div class="sc-h rv"><h2 class="d">Dúvidas comuns</h2><span>faq</span></div>
+<div class="rv">
+<div class="fq-i"><button class="fq-q">Quanto tempo leva um sob medida?<i>+</i></button><div class="fq-a"><p>Em média 3 semanas com 2 provas. Para casamento, comece 2 meses antes e durma tranquilo.</p></div></div>
+<div class="fq-i"><button class="fq-q">A medida por IA substitui a prova?<i>+</i></button><div class="fq-a"><p>Não. Ela adianta 90 por cento do trabalho para a primeira prova ser cirúrgica. O olho do mestre fecha os 10 finais.</p></div></div>
+<div class="fq-i"><button class="fq-q">Ajustam roupa comprada em loja?<i>+</i></button><div class="fq-a"><p>Sim. Barra, lateral, ombro e punho com acabamento de atelier.</p></div></div>
+<div class="fq-i"><button class="fq-q">Atendem noivo e padrinhos juntos?<i>+</i></button><div class="fq-a"><p>Sim, com entrega sincronizada e padrão único de caimento para as fotos.</p></div></div>
+</div>
+</section>
+<footer class="ft">
+<h2 class="ft-g d">Vista-se <em>de você.</em></h2>
+<div class="ft-r">
+<div><h4>Atelier</h4><p>Sob medida<br>Ajustes finos<br>Camisas</p></div>
+<div><h4>Fale</h4><p><a href="https://wa.me/5511999990000" target="_blank" rel="noopener">WhatsApp</a><br><a href="#topo">Voltar ao topo ↑</a></p></div>
+<div><h4>IA</h4><p>Medida por foto<br>Provador inteligente<br>Prova em casa</p></div>
+</div>
+<div class="ft-b"><span>© <i id="yr">2026</i> Vértice Alfaiataria.</span><span>Fotos: Unsplash (uso livre).</span></div>
+</footer>
+<script>
+(function(){
+"use strict";
+var $=function(s,c){return (c||document).querySelector(s)};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+/* assistente */
+var KB=[
+{k:["preço","preco","valor","quanto"],a:"Sob medida depende de tecido e ocasião. Chama no zap com a data que passamos a faixa na hora."},
+{k:["prazo","demora","tempo","quando fica pronto"],a:"Média de 3 semanas com 2 provas. Casamento pede 2 meses de frente."},
+{k:["medida por ia","medida","foto"],a:"Fotos guiadas geram sua pré-medida antes da prova. Teste o Provador IA aqui na página."},
+{k:["casamento","noivo","padrinho"],a:"Noivo e padrinhos com caimento único e entrega sincronizada. Agende com a data."},
+{k:["ajuste","barra","reforma"],a:"Ajustamos peça de loja com acabamento de atelier: barra, lateral, ombro e punho."},
+{k:["onde","endereço","endereco"],a:"Atendimento com hora marcada e prova em casa. Chama no zap e combinamos."}
+];
+var FB='Não sei ainda. <a href="https://wa.me/5511999990000" target="_blank" rel="noopener">Chama no zap</a> que respondemos.';
+var css="#wxb{position:fixed;right:1.2rem;bottom:1.2rem;z-index:150;width:60px;height:60px;border-radius:50%;border:0;background:#e3c37c;color:#131109;font-size:1.5rem;cursor:pointer;font-family:inherit;box-shadow:0 8px 30px rgba(0,0,0,.4)}#wxp{position:fixed;right:1.2rem;bottom:5.2rem;z-index:150;width:min(350px,90vw);background:#151515;color:#f5f5f5;border:1px solid rgba(255,255,255,.15);border-radius:18px;overflow:hidden;display:none;flex-direction:column}#wxp.on{display:flex}#wxh{padding:.9rem 1.1rem;font-weight:800;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;background:#e3c37c;color:#131109;display:flex;justify-content:space-between;align-items:center}#wxx{cursor:pointer}#wxm{padding:1rem 1.1rem;max-height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:.6rem;font-size:.92rem;line-height:1.55}#wxm .u{align-self:flex-end;background:rgba(255,255,255,.12);border-radius:12px 12px 3px 12px;padding:.6rem .9rem;max-width:85%}#wxm .b{align-self:flex-start;background:rgba(255,255,255,.07);border-radius:12px 12px 12px 3px;padding:.6rem .9rem;max-width:90%}#wxm a{color:#e3c37c}#wxf{display:flex;border-top:1px solid rgba(255,255,255,.12)}#wxi{flex:1;background:none;border:0;color:#f5f5f5;padding:.9rem 1rem;font-size:.95rem;font-family:inherit;outline:none;min-width:0}#wxs{background:none;border:0;color:#e3c37c;font-size:1.3rem;padding:0 1rem;cursor:pointer}";
+var st=document.createElement("style");st.textContent=css;document.head.appendChild(st);
+var w=document.createElement("div");w.innerHTML='<button id="wxb" aria-label="Perguntar">✦</button><div id="wxp"><div id="wxh"><span>Assistente</span><span id="wxx">×</span></div><div id="wxm"></div><div id="wxf"><input id="wxi" placeholder="Pergunte..." autocomplete="off"><button id="wxs" aria-label="Enviar">→</button></div></div>';document.body.appendChild(w);
+var said=false;
+function say(t,who){var m=document.getElementById("wxm");var d=document.createElement("div");d.className=who;d.textContent=t;m.appendChild(d);m.scrollTop=m.scrollHeight}
+function answer(t){var l=t.toLowerCase(),best=null,bs=0;KB.forEach(function(e){var s=0;e.k.forEach(function(k){if(l.indexOf(k)>=0)s+=k.length});if(s>bs){bs=s;best=e}});say(best?best.a:FB,"b")}
+function send(){var i=document.getElementById("wxi");var t=i.value.trim();if(!t)return;say(t,"u");i.value="";setTimeout(function(){answer(t)},350)}
+document.getElementById("wxb").onclick=function(){var p=document.getElementById("wxp");p.classList.toggle("on");if(p.classList.contains("on")&&!said){said=true;say("Olá! Pergunte sobre preço, prazo, casamento ou ajustes.","b")}};
+document.getElementById("wxx").onclick=function(){document.getElementById("wxp").classList.remove("on")};
+document.getElementById("wxs").onclick=send;
+document.getElementById("wxi").addEventListener("keydown",function(e){if(e.key==="Enter")send()});
+/* provador */
+var P={o:"",u:"",p:""};
+function dot(i){var d=$("#d"+i);if(d)d.classList.add("f")}
+function step(id){$$(".qz-s").forEach(function(s){s.classList.remove("on")});var el=$(id);if(el)el.classList.add("on")}
+$$("#qs1 button").forEach(function(b){b.addEventListener("click",function(){P.o=b.textContent;dot(1);step("#qs2")})});
+$$("#qs2 button").forEach(function(b){b.addEventListener("click",function(){P.u=b.textContent;dot(2);step("#qs3")})});
+$$("#qs3 button").forEach(function(b){b.addEventListener("click",function(){
+P.p=b.textContent;dot(3);
+$$(".qz-s").forEach(function(s){s.classList.remove("on")});
+var rec="Sob medida completo",txt="";
+if(P.o.indexOf("casamento")>=0){rec="Sob medida casamento";txt="Noivo e padrinhos com caimento único, entrega sincronizada e prova final perto da data."}
+else if(P.p.indexOf("prazo")>=0){rec="Ajuste fino expresso";txt="Sua peça pronta com caimento de atelier em dias, não semanas."}
+else if(P.p.indexOf("custo")>=0){rec="Sob medida essencial";txt="O caimento perfeito no tecido de melhor custo-benefício."}
+else{txt="Tecido, corte e acabamento escolhidos para "+P.o.toLowerCase()+" com a sua rotina de "+P.u.toLowerCase()+"."}
+$("#qres").textContent=rec;$("#qtxt").textContent=txt;
+$("#qzap").href="https://wa.me/5511999990000?text="+encodeURIComponent("Olá! Provador IA indicou: "+rec+" ("+P.o+", "+P.u+", prioridade "+P.p+"). Quero agendar.");
+$("#qr").classList.add("on");
+})});
+/* base */
+var pl=$("#pl"),pln=$("#pln"),n=0;
+var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function hidePl(){pl.classList.add("g");document.body.style.overflow="";setTimeout(function(){pl.remove()},800)}
+if(rm){hidePl()}else{document.body.style.overflow="hidden";var t=setInterval(function(){n=Math.min(100,n+Math.ceil(Math.random()*14));pln.textContent=n;if(n>=100){clearInterval(t);setTimeout(hidePl,250)}},110)}
+var hd=$("#hd"),hdn=$("#hdn");
+window.addEventListener("scroll",function(){hd.classList.toggle("f",window.scrollY>40)},{passive:true});
+$("#hdm").addEventListener("click",function(){hdn.classList.toggle("o")});
+$$("#hdn a").forEach(function(a){a.addEventListener("click",function(){hdn.classList.remove("o")})});
+var mqt=$("#mqt");mqt.innerHTML+=mqt.innerHTML;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.12});
+$$(".rv").forEach(function(el){io.observe(el)});
+$$(".fq-i").forEach(function(it){var q=$(".fq-q",it),a=$(".fq-a",it);q.addEventListener("click",function(){var open=it.classList.contains("o");$$(".fq-i.o").forEach(function(o){o.classList.remove("o");$(".fq-a",o).style.maxHeight="0"});if(!open){it.classList.add("o");a.style.maxHeight=a.scrollHeight+"px"}})});
+$("#fm").addEventListener("submit",function(e){e.preventDefault();var msg="Olá! Sou "+$("#fn").value+", assunto: "+$("#fs").value+", melhor dia: "+$("#fd").value+".";window.open("https://wa.me/5511999990000?text="+encodeURIComponent(msg),"_blank")});
+$("#yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

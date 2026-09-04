@@ -138,7 +138,7 @@ a{color:inherit}
 <div class="hro-x">
 <span class="hro-s">Primeira alfaiataria ai-first do Brasil</span>
 <h1 class="hro-t d">Terno que parece <em>nascido em você.</em></h1>
-<p class="hro-p">Medida por IA, corte de mestre e prova marcada no zap. Sob medida de verdade, sem as 5 idas ao atelier.</p>
+<p class="hro-p">Corte sob medida e um questionário para orientar sua escolha. As medidas e a prova são realizadas com o profissional.</p>
 <div class="hro-a">
 <a class="bt bt1" href="#provador">Provador IA</a>
 <a class="bt bt2" href="#agendar">Agendar prova</a>
@@ -161,7 +161,7 @@ a{color:inherit}
 <div class="sc-h rv"><h2 class="d">Serviços</h2><span>o atelier</span></div>
 <div class="sv-g">
 <article class="cd rv"><n>I</n><h3>Terno sob medida</h3><p>Do tecido ao botão final, construído nas suas medidas com 2 provas e entrega marcada.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
-<article class="cd rv"><n>II</n><h3>Medida por IA</h3><p>Fotos guiadas geram sua pré-medida antes da primeira prova. Chega pronto, sai perfeito.</p><f><b>Grátis</b><a href="#provador">Testar →</a></f></article>
+<article class="cd rv"><n>II</n><h3>Escolha orientada</h3><p>Responda sobre ocasião, rotina e prioridade para receber uma sugestão de serviço. O questionário não calcula medidas.</p><f><b>Grátis</b><a href="#provador">Testar →</a></f></article>
 <article class="cd rv"><n>III</n><h3>Casamentos</h3><p>Noivo, padrinhos e pai com o mesmo caimento e entrega sincronizada para o grande dia.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
 <article class="cd rv"><n>IV</n><h3>Ajustes finos</h3><p>Barra, lateral, ombro e punho em peça pronta. O terno de loja vira sob medida.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
 <article class="cd rv"><n>V</n><h3>Camisas</h3><p>Colarinho, punho e monograma do seu jeito, no algodão certo para o clima.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
@@ -199,7 +199,7 @@ a{color:inherit}
 <div class="qz-r" id="qr">
 <b id="qres">Sob medida completo</b>
 <p id="qtxt"></p>
-<a class="bt bt1" id="qzap" href="#" target="_blank" rel="noopener">Pedir esse no zap →</a>
+<a class="bt bt1" id="qzap" href="#contact-status" rel="noopener" aria-disabled="true">Contato indisponível</a>
 </div>
 </section>
 <div class="of rv" id="atelier" style="margin-top:10vh">
@@ -222,17 +222,17 @@ a{color:inherit}
 <div class="ag rv">
 <div>
 <h2 class="d">Sua medida <em>começa aqui.</em></h2>
-<p>Preencha e caia no WhatsApp com a mensagem pronta. Sem cadastro, sem espera.</p>
+<p>O formulário está indisponível enquanto o canal de atendimento é confirmado.</p>
 <p><b style="color:var(--ch)">Atendimento com hora marcada.</b><br>Traga a ocasião que a gente resolve o resto.</p>
 </div>
-<form class="fm" id="fm">
+<form class="fm" id="fm" aria-describedby="contact-status">
 <label for="fn">Seu nome</label>
-<input id="fn" type="text" placeholder="Como podemos chamar você" required autocomplete="name">
+<input disabled id="fn" type="text" placeholder="Como podemos chamar você" required autocomplete="name">
 <label for="fs">Assunto</label>
-<select id="fs"><option>Terno sob medida</option><option>Casamento</option><option>Ajuste fino</option><option>Camisas</option><option>Prova em casa</option></select>
+<select disabled id="fs"><option>Terno sob medida</option><option>Casamento</option><option>Ajuste fino</option><option>Camisas</option><option>Prova em casa</option></select>
 <label for="fd">Melhor dia</label>
-<input id="fd" type="date" required>
-<button class="bt bt1" type="submit">Enviar no WhatsApp →</button>
+<input disabled id="fd" type="date" required>
+<button class="bt bt1" type="submit" disabled>Contato indisponível</button>
 </form>
 </div>
 <section class="sc">
@@ -245,10 +245,11 @@ a{color:inherit}
 </div>
 </section>
 <footer class="ft">
+<p id="contact-status" role="status" tabindex="-1" data-contact-status="unavailable">Contato temporariamente indisponível. Este site não está recebendo pedidos ou agendamentos.</p>
 <h2 class="ft-g d">Vista-se <em>de você.</em></h2>
 <div class="ft-r">
 <div><h4>Atelier</h4><p>Sob medida<br>Ajustes finos<br>Camisas</p></div>
-<div><h4>Fale</h4><p><a href="https://wa.me/5511999990000" target="_blank" rel="noopener">WhatsApp</a><br><a href="#topo">Voltar ao topo ↑</a></p></div>
+<div><h4>Fale</h4><p><a href="#contact-status" aria-disabled="true" rel="noopener">Contato indisponível</a><br><a href="#topo">Voltar ao topo ↑</a></p></div>
 <div><h4>IA</h4><p>Medida por foto<br>Provador inteligente<br>Prova em casa</p></div>
 </div>
 <div class="ft-b"><span>© <i id="yr">2026</i> Vértice Alfaiataria.</span><span>Fotos: Unsplash (uso livre).</span></div>
@@ -267,7 +268,7 @@ var KB=[
 {k:["ajuste","barra","reforma"],a:"Ajustamos peça de loja com acabamento de atelier: barra, lateral, ombro e punho."},
 {k:["onde","endereço","endereco"],a:"Atendimento com hora marcada e prova em casa. Chama no zap e combinamos."}
 ];
-var FB='Não sei ainda. <a href="https://wa.me/5511999990000" target="_blank" rel="noopener">Chama no zap</a> que respondemos.';
+var FB="O contato está temporariamente indisponível. Nenhuma mensagem foi enviada.";
 var css="#wxb{position:fixed;right:1.2rem;bottom:1.2rem;z-index:150;width:60px;height:60px;border-radius:50%;border:0;background:#e3c37c;color:#131109;font-size:1.5rem;cursor:pointer;font-family:inherit;box-shadow:0 8px 30px rgba(0,0,0,.4)}#wxp{position:fixed;right:1.2rem;bottom:5.2rem;z-index:150;width:min(350px,90vw);background:#151515;color:#f5f5f5;border:1px solid rgba(255,255,255,.15);border-radius:18px;overflow:hidden;display:none;flex-direction:column}#wxp.on{display:flex}#wxh{padding:.9rem 1.1rem;font-weight:800;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;background:#e3c37c;color:#131109;display:flex;justify-content:space-between;align-items:center}#wxx{cursor:pointer}#wxm{padding:1rem 1.1rem;max-height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:.6rem;font-size:.92rem;line-height:1.55}#wxm .u{align-self:flex-end;background:rgba(255,255,255,.12);border-radius:12px 12px 3px 12px;padding:.6rem .9rem;max-width:85%}#wxm .b{align-self:flex-start;background:rgba(255,255,255,.07);border-radius:12px 12px 12px 3px;padding:.6rem .9rem;max-width:90%}#wxm a{color:#e3c37c}#wxf{display:flex;border-top:1px solid rgba(255,255,255,.12)}#wxi{flex:1;background:none;border:0;color:#f5f5f5;padding:.9rem 1rem;font-size:.95rem;font-family:inherit;outline:none;min-width:0}#wxs{background:none;border:0;color:#e3c37c;font-size:1.3rem;padding:0 1rem;cursor:pointer}";
 var st=document.createElement("style");st.textContent=css;document.head.appendChild(st);
 var w=document.createElement("div");w.innerHTML='<button id="wxb" aria-label="Perguntar">✦</button><div id="wxp"><div id="wxh"><span>Assistente</span><span id="wxx">×</span></div><div id="wxm"></div><div id="wxf"><input id="wxi" placeholder="Pergunte..." autocomplete="off"><button id="wxs" aria-label="Enviar">→</button></div></div>';document.body.appendChild(w);
@@ -290,11 +291,11 @@ P.p=b.textContent;dot(3);
 $$(".qz-s").forEach(function(s){s.classList.remove("on")});
 var rec="Sob medida completo",txt="";
 if(P.o.indexOf("casamento")>=0){rec="Sob medida casamento";txt="Noivo e padrinhos com caimento único, entrega sincronizada e prova final perto da data."}
-else if(P.p.indexOf("prazo")>=0){rec="Ajuste fino expresso";txt="Sua peça pronta com caimento de atelier em dias, não semanas."}
+else if(P.p.toLowerCase().indexOf("prazo")>=0){rec="Ajuste fino expresso";txt="Sua peça pronta com caimento de atelier em dias, não semanas."}
 else if(P.p.indexOf("custo")>=0){rec="Sob medida essencial";txt="O caimento perfeito no tecido de melhor custo-benefício."}
 else{txt="Tecido, corte e acabamento escolhidos para "+P.o.toLowerCase()+" com a sua rotina de "+P.u.toLowerCase()+"."}
 $("#qres").textContent=rec;$("#qtxt").textContent=txt;
-$("#qzap").href="https://wa.me/5511999990000?text="+encodeURIComponent("Olá! Provador IA indicou: "+rec+" ("+P.o+", "+P.u+", prioridade "+P.p+"). Quero agendar.");
+$("#qzap").href="#contact-status";
 $("#qr").classList.add("on");
 })});
 /* base */
@@ -310,7 +311,7 @@ var mqt=$("#mqt");mqt.innerHTML+=mqt.innerHTML;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.12});
 $$(".rv").forEach(function(el){io.observe(el)});
 $$(".fq-i").forEach(function(it){var q=$(".fq-q",it),a=$(".fq-a",it);q.addEventListener("click",function(){var open=it.classList.contains("o");$$(".fq-i.o").forEach(function(o){o.classList.remove("o");$(".fq-a",o).style.maxHeight="0"});if(!open){it.classList.add("o");a.style.maxHeight=a.scrollHeight+"px"}})});
-$("#fm").addEventListener("submit",function(e){e.preventDefault();var msg="Olá! Sou "+$("#fn").value+", assunto: "+$("#fs").value+", melhor dia: "+$("#fd").value+".";window.open("https://wa.me/5511999990000?text="+encodeURIComponent(msg),"_blank")});
+$("#fm").addEventListener("submit",function(e){e.preventDefault();document.getElementById("contact-status").focus()});
 $("#yr").textContent=new Date().getFullYear();
 })();
 </script>
